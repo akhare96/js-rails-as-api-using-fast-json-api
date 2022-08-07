@@ -3,6 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.1'
 
+gem 'fast_jsonapi'
+#The Fast JSON API is a JSON serializer for Rails APIs
+#It provides a way for us to generate serializer classes for each resource object in our API that is involved in customized JSON rendering
+#We can use these serializer classes to define the specific attributes we want objects to share or not share, along with things like related object attributes
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.5'
